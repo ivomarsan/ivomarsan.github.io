@@ -9,6 +9,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  z-index: 0;
 }
 
 /* Remove default padding and Remove list styles on ul, ol elements with a class attribute */

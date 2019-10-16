@@ -1,7 +1,7 @@
 :root {
   --white: #fff;
   --purple: #6751eb;
-  --menu-bg: color-mod(var(--purple) tint(80%));
+  --menu-bg: color-mod(var(--purple) tint(90%));
   --grey: #1e1e1d;
   --yellow: #ffad15;
   --green: #42b983;

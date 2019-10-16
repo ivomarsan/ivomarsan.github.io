@@ -12,8 +12,6 @@ module.exports = {
         'nesting-rules': true
       }
     },
-    'postcss-color-function': {
-      preserveCustomProps: true
-    }
+    'postcss-color-mod-function': {}
   }
 }
