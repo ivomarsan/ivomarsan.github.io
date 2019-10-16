@@ -1,0 +1,6 @@
+{
+  "about": "About",
+  "hello": "hello i18n !!",
+  "home": "Home",
+  "candy": "no candies | one candy | {count} candies"
+}

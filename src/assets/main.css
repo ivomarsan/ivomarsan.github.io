@@ -1,0 +1,11 @@
+@import 'styles/reset.css';
+@import 'styles/variables.css';
+
+a {
+  color: var(--links);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
