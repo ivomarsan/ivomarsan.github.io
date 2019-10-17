@@ -14,6 +14,8 @@
       <rect class="border" y="3" x="3" width="122" height="122" />
       <circle class="dot" cx="88" cy="40" r="4" />
     </svg>
+
+    <h1>ivomarsan</h1>
   </section>
 </template>
 
@@ -25,6 +27,22 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="postcss" scoped>
+section {
+  display: flex;
+  align-items: center;
+
+  & h1 {
+    font-family: 'Comfortaa', cursive;
+    font-weight: lighter;
+    font-size: 4rem;
+    color: var(--black);
+    margin-left: 3rem;
+    z-index: -1;
+    opacity: 0;
+    animation: reposition 1s ease-in-out forwards 4s;
+  }
+}
+
 svg {
   width: 50rem;
   height: 50rem;
@@ -137,10 +155,14 @@ svg {
   }
 }
 
-@media (max-width: 500px) {
+@media (--smartphone) {
   svg {
     width: 30rem;
     height: 30rem;
+  }
+
+  section h1 {
+    display: none;
   }
 }
 </style>
