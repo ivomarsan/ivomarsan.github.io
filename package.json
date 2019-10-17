@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'",
+    "deploy": "npm run build && gh-pages -d dist --branch master"
   },
   "dependencies": {
     "core-js": "^2.6.5",
@@ -32,6 +33,7 @@
     "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-vue": "^5.0.0",
+    "gh-pages": "^2.1.1",
     "postcss-color-mod-function": "^3.0.3",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^1.18.2",
