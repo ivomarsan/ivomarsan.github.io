@@ -60,14 +60,4 @@ export default {
 }
 </script>
 
-<style lang="postcss" scoped>
-#input-name {
-  transform: scaleY(1.5);
-
-  &:hover {
-    transform: scale(1);
-
-    /* color: #ff0 */
-  }
-}
-</style>
+<style lang="postcss" scoped></style>
