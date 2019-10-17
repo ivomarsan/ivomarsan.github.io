@@ -69,7 +69,7 @@ header {
   }
 }
 
-@media (--smartphone) {
+@media (max-width: 500px) {
   header {
     padding: 1rem 2rem;
   }

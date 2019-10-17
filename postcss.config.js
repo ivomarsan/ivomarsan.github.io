@@ -13,7 +13,6 @@ module.exports = {
         'nesting-rules': true
       }
     },
-    'postcss-color-mod-function': {},
-    'postcss-custom-media': {}
+    'postcss-color-mod-function': {}
   }
 }

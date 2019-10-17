@@ -155,7 +155,7 @@ svg {
   }
 }
 
-@media (--smartphone) {
+@media (max-width: 500px) {
   svg {
     width: 30rem;
     height: 30rem;

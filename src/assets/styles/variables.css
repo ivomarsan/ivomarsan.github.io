@@ -10,5 +10,3 @@
   --offwhite: #f8f8f8;
   --darkerwhite: color-mod(var(--offwhite) shade(20%));
 }
-
-@custom-media --smartphone (max-width: 500px);
