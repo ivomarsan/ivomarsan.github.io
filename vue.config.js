@@ -1,6 +1,7 @@
 module.exports = {
   css: {
-    requireModuleExtension: true
+    // requireModuleExtension: false,
+    modules: true
   },
 
   pluginOptions: {
