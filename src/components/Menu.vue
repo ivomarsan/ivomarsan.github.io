@@ -6,25 +6,43 @@
 
     <ul :class="toggle ? 'on' : 'off'">
       <li>
-        <a href="#">Home</a>
+        <router-link to="/vue">Home</router-link>
       </li>
       <li>
-        <a href="#">About</a>
+        <router-link to="/about">About</router-link>
       </li>
       <li>
-        <a href="#">Work</a>
+        <router-link to="/test">Redirect</router-link>
+      </li>
+      <li>
+        <router-link to="/test/5">Redirect With Prop</router-link>
       </li>
     </ul>
   </nav>
 </template>
 
 <script>
+import { esc } from '@/mixins'
 export default {
   name: 'Menu',
+
+  mixins: [esc],
 
   data() {
     return {
       toggle: false
+    }
+  },
+
+  watch: {
+    $route() {
+      this.esc()
+    }
+  },
+
+  methods: {
+    esc() {
+      this.toggle = false
     }
   }
 }
@@ -32,6 +50,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="postcss" scoped>
+/* nav {
+  z-index: 0;
+} */
+
 .menu {
   background: var(--white);
   border-radius: 50%;
@@ -40,6 +62,8 @@ export default {
   cursor: pointer;
   box-shadow: 0 0 0 0 var(--menu-bg), 0 0 0 0 var(--menu-bg);
   transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+  opacity: 0;
+  animation: fade-in 300ms ease-in-out forwards 4.5s;
 
   &:hover {
     box-shadow: 0 0 0 8px var(--menu-bg), 0 0 0 8px var(--menu-bg);
@@ -129,5 +153,11 @@ a {
   display: block;
   margin-bottom: 1em;
   text-decoration: none;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
 }
 </style>

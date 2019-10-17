@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <div class="background-logo"></div>
 
     <svg
@@ -14,7 +14,7 @@
       <rect class="border" y="3" x="3" width="122" height="122" />
       <circle class="dot" cx="88" cy="40" r="4" />
     </svg>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -34,7 +34,6 @@ svg {
   transform: translate(-50%, -50%);
   animation: resize 1s ease-in-out forwards 3s,
     reposition 1s ease-in-out forwards 4s;
-  z-index: 1;
 }
 
 .logo {
@@ -49,7 +48,6 @@ svg {
   animation: drawn-letter 3s ease-in-out forwards,
     fill-letter 500ms ease-in-out forwards 2s,
     fillBlack 100ms ease-in-out forwards 4s;
-  z-index: 1;
 }
 
 .dot {
@@ -63,7 +61,6 @@ svg {
   animation: drawn-letter 1s ease-in-out forwards 1s,
     fill-letter 500ms ease-in-out forwards 2s,
     fillBlack 100ms ease-in-out forwards 4s;
-  z-index: 1;
 }
 
 .border {
@@ -83,7 +80,6 @@ svg {
   top: 0;
   left: 0;
   animation: fade-out 1s ease-in-out forwards 3.5s;
-  z-index: 1;
 }
 
 @keyframes drawn-letter {
