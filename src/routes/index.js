@@ -18,7 +18,7 @@ Vue.use(Router)
  * Create and Export Vue Router
  */
 export default new Router({
-  mode: 'history',
+  mode: 'hash', // history
   base: process.env.BASE_URL,
   routes
 })
