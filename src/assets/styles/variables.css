@@ -1,5 +1,6 @@
 :root {
   --white: #fff;
+  --black: #000;
   --purple: #6751eb;
   --menu-bg: color-mod(var(--purple) tint(90%));
   --grey: #1e1e1d;
@@ -9,3 +10,5 @@
   --offwhite: #f8f8f8;
   --darkerwhite: color-mod(var(--offwhite) shade(20%));
 }
+
+@custom-media --smartphone (max-width: 500px);
