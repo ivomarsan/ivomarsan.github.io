@@ -74,7 +74,7 @@ export default {
 }
 
 .hamburguer {
-  --menu-color: #000;
+  --menu-color: var(--black);
   --transition-time: 300ms;
 
   position: relative;
