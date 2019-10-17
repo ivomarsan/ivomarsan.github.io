@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.5827dda86b6c5d94b0f10d63e6fd5310.js"
+  "/precache-manifest.5ab9ab2f8cb6fe80cda82b34e932f9ab.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "ivomarsan.com"});
