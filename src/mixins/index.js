@@ -14,4 +14,5 @@ Vue.mixin(debounce)
 /**
  * Exports
  */
+export { default as esc } from './esc'
 export { default as i18n } from './i18n'
