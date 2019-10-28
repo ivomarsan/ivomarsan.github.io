@@ -10,4 +10,6 @@
   --links: color-mod(var(--purple) tint(30%));
   --menu-bg: color-mod(var(--purple) tint(90%));
   --darkerwhite: color-mod(var(--offwhite) shade(20%));
+
+  --max-width: 120rem;
 }
