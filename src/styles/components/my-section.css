@@ -19,7 +19,7 @@
   flex-wrap: wrap;
 }
 
-.my-section header .icon {
+.my-section header .svg-icon {
   width: 6rem;
 
   & svg {
