@@ -3,5 +3,14 @@
   "menu": {
     "home": "Início",
     "about": "Sobre"
+  },
+  "section": {
+    "default": "Seção",
+    "education": "Educação",
+    "logos": "Marcas",
+    "projects": "Projetos",
+    "softwares": "Patentes",
+    "where": "Onde",
+    "chat": "Bate-papo"
   }
 }
