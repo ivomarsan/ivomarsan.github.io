@@ -1,18 +1,21 @@
 <template>
   <div class="home">
     <!-- TODO -->
-    <MySection icon="chat" title="chat"></MySection>
-    <MySection icon="default" title="default"></MySection>
-    <MySection icon="education" title="education"></MySection>
-    <MySection icon="logos" title="logos"></MySection>
-    <MySection icon="projects" title="projects"></MySection>
-    <MySection icon="softwares" title="softwares"></MySection>
-    <MySection icon="where" title="where"></MySection>
-
-    <code>
-      Vuex Model:
-      <pre>{{ model }}</pre>
-    </code>
+    <MySection icon="chat" :title="$t('section.chat')"
+      >Aqui será um Chat por exemplo</MySection
+    >
+    <MySection icon="default" :title="$t('section.default')"></MySection>
+    <MySection icon="education" :title="$t('section.education')"></MySection>
+    <MySection icon="logos" :title="$t('section.logos')"></MySection>
+    <MySection icon="projects" :title="$t('section.projects')"></MySection>
+    <MySection icon="softwares" :title="$t('section.softwares')">
+      <ul>
+        <li class="agped">AGPeD <em>BR 51 2018 001387-2</em></li>
+        <li class="teams">TEAMS <em>BR 51 2019 000559-7</em></li>
+        <li>Teach in Touch <em>BR 51 2019 000910-0</em></li>
+      </ul>
+    </MySection>
+    <MySection icon="where" :title="$t('section.where')"></MySection>
   </div>
 </template>
 
