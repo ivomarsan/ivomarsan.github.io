@@ -1,5 +1,6 @@
 <template>
   <div
+    class="icon"
     v-html="require(`!!html-loader!@/assets/icons/outline-${icon}.svg`)"
   ></div>
 </template>
