@@ -1,8 +1,13 @@
 <template>
   <!-- TODO MySection -->
-  <section class="my-section">
-    <SvgOutline :icon="icon" />
-    <h1>{{ title }}</h1>
+  <section class="my-section" :class="icon">
+    <header>
+      <SvgOutline :icon="icon" />
+      <h1>{{ title }}</h1>
+    </header>
+    <div class="slot">
+      <slot></slot>
+    </div>
   </section>
 </template>
 
@@ -24,12 +29,6 @@ export default {
     title: {
       type: String,
       default: 'Title'
-    }
-  },
-
-  data() {
-    return {
-      toggle: false
     }
   }
 }
