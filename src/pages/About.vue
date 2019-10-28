@@ -4,7 +4,6 @@
     <p>{{ $d(new Date(), 'long') }}</p>
     <p>{{ $tc('candy', model.count, { count: model.count }) }}</p>
     <h1>This is an about page</h1>
-    <h2>i18n: {{ $t('about') }}</h2>
 
     <code>Route Params</code>
     <pre>{{ $route.params }}</pre>

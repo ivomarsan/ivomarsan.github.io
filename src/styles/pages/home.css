@@ -1,0 +1,9 @@
+/* TODO home page style */
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 120rem;
+  justify-content: space-between;
+  margin: 2rem 1rem;
+}

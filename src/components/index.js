@@ -1,4 +1,47 @@
-export const Logo = () => import(`@/components/Logo.vue`)
-export const Menu = () => import(`@/components/Menu.vue`)
-export const HelloI18n = () => import(`@/components/HelloI18n.vue`)
-export const HelloWorld = () => import(`@/components/HelloWorld.vue`)
+export const PageLogo = () =>
+  import(
+    /* webpackChunkName: "PageLogo.vue" */
+    `@/components/PageLogo.vue`
+  )
+
+export const MainMenu = () =>
+  import(
+    /* webpackChunkName: "MainMenu.vue" */
+    `@/components/MainMenu.vue`
+  )
+
+export const HelloI18n = () =>
+  import(
+    /* webpackChunkName: "HelloI18n.vue" */
+    `@/components/HelloI18n.vue`
+  )
+
+export const HelloWorld = () =>
+  import(
+    /* webpackChunkName: "HelloWorld.vue" */
+    `@/components/HelloWorld.vue`
+  )
+
+export const MySection = () =>
+  import(
+    /* webpackChunkName: "MySection.vue" */
+    `@/components/MySection.vue`
+  )
+
+export const SvgOutline = () =>
+  import(
+    /* webpackChunkName: "SvgOutline.vue" */
+    `@/components/SvgOutline.vue`
+  )
+
+// const Components = {}
+
+// const allComponents = require
+//   .context('@/components', true, /[A-Za-z0-9-_,\s]+\.vue$/i)
+//   .keys()
+//   .map(component => component.replace(/\.\/|\.vue/g, ''))
+
+// allComponents.forEach(component => {
+//   Components[component] = require(/* webpackChunkName: "[request]" */
+//   `@/components/${component}.vue`)
+// })

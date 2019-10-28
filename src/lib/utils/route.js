@@ -7,18 +7,27 @@ import { capitalize } from '@/lib/utils'
  * @returns {object}
  */
 export default function(path, options = {}) {
-  if (options.redirect && options.component) {
-    delete options.component
-  } else if (!options.redirect && !options.component) {
-    const componentName = capitalize(path.match(/([^/]+)/)[0])
-    options.component = () => import(`@/views/${componentName}`)
+  // Remove "/" from routes
+  const regex = path.match(/([^/]+)/)
+  // Catch component name by route
+  const componentName = capitalize(regex ? regex[0] : '')
+
+  // If options have not component and redirect, auto import a component
+  if (!options.redirect && !options.component) {
+    options.component = () =>
+      import(
+        /* webpackChunkName: "[request]" */
+        `@/pages/${options.name ? options.name : componentName}`
+      )
   }
 
-  const name = options.name ? options.name : capitalize(path.slice(1))
+  // If options.name have not set up will be auto set
+  if (!options.name && componentName.length && path.indexOf(':') === -1) {
+    options.name = componentName
+  }
 
   return {
     path,
-    name,
     ...options
   }
 }

@@ -1,0 +1,141 @@
+#page-logo {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+
+  & h1 {
+    font-family: 'Comfortaa', cursive;
+    font-weight: lighter;
+    font-size: 4rem;
+    color: var(--black);
+    margin-left: 3rem;
+    opacity: 0;
+    animation: reposition 1s ease-in-out forwards 4s;
+  }
+
+  & svg {
+    width: 50rem;
+    height: 50rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: resize 1s ease-in-out forwards 3s,
+      reposition 1s ease-in-out forwards 4s;
+  }
+}
+
+#page-logo .background-logo {
+  background-color: var(--purple);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: fade-out 500ms ease-in-out forwards 3.5s;
+}
+
+#page-logo svg .logo {
+  fill: transparent;
+  fill-opacity: 1;
+  stroke: var(--white);
+  stroke-width: 0.3;
+  stroke-opacity: 1;
+  stroke-miterlimit: 4;
+  stroke-dasharray: 394;
+  stroke-dashoffset: 394;
+  animation: drawn-letter 3s ease-in-out forwards,
+    fill-letter 500ms ease-in-out forwards 2s,
+    fillBlack 100ms ease-in-out forwards 4s;
+}
+
+#page-logo svg .dot {
+  fill: transparent;
+  fill-opacity: 1;
+  stroke: var(--white);
+  stroke-width: 0.3;
+  stroke-opacity: 1;
+  stroke-dasharray: 26;
+  stroke-dashoffset: 26;
+  animation: drawn-letter 1s ease-in-out forwards 1s,
+    fill-letter 500ms ease-in-out forwards 2s,
+    fillBlack 100ms ease-in-out forwards 4s;
+}
+
+#page-logo svg .border {
+  fill: transparent;
+  fill-opacity: 1;
+  stroke: var(--black);
+  stroke-width: 6;
+  stroke-opacity: 0;
+  animation: stroke-opacity 500ms ease-in-out forwards 5s;
+}
+
+@keyframes drawn-letter {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-letter {
+  to {
+    fill: #fff;
+  }
+}
+
+@keyframes stroke-opacity {
+  to {
+    stroke-opacity: 1;
+  }
+}
+
+@keyframes fillBlack {
+  to {
+    fill: #000;
+  }
+}
+
+@keyframes resize {
+  to {
+    opacity: 0;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@keyframes reposition {
+  from,
+  to {
+    position: unset;
+    transform: none;
+  }
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+    height: 0;
+    transform: translate3d(0, 100vh, 0);
+  }
+}
+
+@media (max-width: 500px) {
+  #page-logo {
+    & h1 {
+      display: none;
+    }
+
+    & svg {
+      width: 30rem;
+      height: 30rem;
+    }
+  }
+}

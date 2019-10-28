@@ -6,5 +6,5 @@ import createPersistedState from 'vuex-persistedstate'
 // https://www.npmjs.com/package/vuex-persistedstate
 export default createPersistedState({
   key: localStorageKey,
-  paths: []
+  paths: ['i18n']
 })

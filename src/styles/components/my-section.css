@@ -1,0 +1,30 @@
+/* TODO MySection */
+.my-section {
+  max-width: 30rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  background-color: var(--purple);
+  border-radius: 3px;
+  box-shadow: 0 0 0.5rem var(--purple);
+  margin: 1rem;
+  color: var(--white);
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.my-section div {
+  width: 30%;
+
+  & svg {
+    stroke: transparent;
+    fill: var(--white);
+  }
+}
+
+.my-section h1 {
+  font-size: 2.6rem;
+  font-family: 'Comfortaa', cursive;
+  font-weight: lighter;
+  text-transform: uppercase;
+}

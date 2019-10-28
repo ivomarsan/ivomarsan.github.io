@@ -3,12 +3,15 @@ import App from './App.vue'
 import router from './routes'
 import store from './store'
 import i18n from './i18n'
+import plugins from './plugins'
 import './registerServiceWorker'
 
-import '@/assets/main.css'
+import '@/styles/main.css'
 
 // Disable Tips in Browser when mode is production
 Vue.config.productionTip = process.env.DEBUG
+
+Vue.use(plugins)
 
 new Vue({
   router,

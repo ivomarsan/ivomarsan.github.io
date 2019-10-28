@@ -1,60 +1,8 @@
-<template>
-  <nav>
-    <div class="menu" :class="toggle ? 'on' : 'off'" @click="toggle = !toggle">
-      <span class="hamburguer" :class="toggle ? 'on' : 'off'"></span>
-    </div>
-
-    <ul :class="toggle ? 'on' : 'off'">
-      <li>
-        <router-link to="/vue">Home</router-link>
-      </li>
-      <li>
-        <router-link to="/about">About</router-link>
-      </li>
-      <li>
-        <router-link to="/test">Redirect</router-link>
-      </li>
-      <li>
-        <router-link to="/test/5">Redirect With Prop</router-link>
-      </li>
-    </ul>
-  </nav>
-</template>
-
-<script>
-import { esc } from '@/mixins'
-export default {
-  name: 'Menu',
-
-  mixins: [esc],
-
-  data() {
-    return {
-      toggle: false
-    }
-  },
-
-  watch: {
-    $route() {
-      this.esc()
-    }
-  },
-
-  methods: {
-    esc() {
-      this.toggle = false
-    }
-  }
+#main-menu {
+  z-index: 1;
 }
-</script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="postcss" scoped>
-/* nav {
-  z-index: 0;
-} */
-
-.menu {
+#main-menu .menu {
   background: var(--white);
   border-radius: 50%;
   width: 60px;
@@ -69,11 +17,11 @@ export default {
     box-shadow: 0 0 0 8px var(--menu-bg), 0 0 0 8px var(--menu-bg);
   }
 }
-.menu.on {
+#main-menu .menu.on {
   box-shadow: 0 0 0 130vw var(--menu-bg), 0 0 0 130vh var(--menu-bg);
 }
 
-.hamburguer {
+#main-menu .menu .hamburguer {
   --menu-color: var(--black);
   --transition-time: 300ms;
 
@@ -106,7 +54,7 @@ export default {
   }
 }
 
-.hamburguer.on {
+#main-menu .menu .hamburguer.on {
   --menu-color: crimson;
 
   transform: rotate(45deg);
@@ -127,32 +75,36 @@ export default {
   }
 }
 
-/* .hamburguer.off {
-  --menu-color: var(--purple);
-} */
-
 /* animação e estilo do menu */
-ul {
-  position: absolute;
+#main-menu ul {
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   list-style: none;
   font-size: 45px;
+  visibility: hidden;
   opacity: 0;
   transition: 0.25s 0.1s cubic-bezier(0, 1.07, 0, 1.02);
   z-index: 2;
+  text-align: center;
 
   &.on {
+    visibility: visible;
     opacity: 1;
   }
 }
 
-a {
-  color: #00cec9;
+#main-menu ul li a {
+  color: var(--purple);
   display: block;
-  margin-bottom: 1em;
-  text-decoration: none;
+  padding: 1rem 0;
+
+  /* &.router-link-exact-active { */
+  &.router-link-active {
+    text-decoration: underline;
+    /* color: var(--links); */
+  }
 }
 
 @keyframes fade-in {
@@ -160,4 +112,3 @@ a {
     opacity: 1;
   }
 }
-</style>

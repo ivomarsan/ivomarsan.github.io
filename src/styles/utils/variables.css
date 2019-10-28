@@ -2,11 +2,12 @@
   --white: #fff;
   --black: #000;
   --purple: #6751eb;
-  --menu-bg: color-mod(var(--purple) tint(90%));
   --grey: #1e1e1d;
   --yellow: #ffad15;
   --green: #42b983;
-  --links: var(--green);
+  --text: #2c3e50;
   --offwhite: #f8f8f8;
+  --links: color-mod(var(--purple) tint(30%));
+  --menu-bg: color-mod(var(--purple) tint(90%));
   --darkerwhite: color-mod(var(--offwhite) shade(20%));
 }

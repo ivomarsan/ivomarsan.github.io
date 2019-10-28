@@ -1,0 +1,29 @@
+@import 'utils/reset.css';
+@import 'utils/variables.css';
+@import 'utils/fonts.css';
+
+a {
+  color: var(--links);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text);
+  animation: reset-overflow 5s cubic-bezier(1, 0, 1, 1);
+}
+
+@keyframes reset-overflow {
+  from {
+    overflow: hidden;
+  }
+  to {
+    overflow: visible;
+  }
+}
