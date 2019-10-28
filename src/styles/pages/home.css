@@ -7,3 +7,14 @@
   justify-content: space-around;
   margin: 2rem 1rem;
 }
+
+/* Softwares icons */
+/* ul li::before {
+  background-image: url('../../assets/images/logo.png');
+} */
+ul li.agped::before {
+  background-image: url('../../assets/images/favicon-agped.png');
+}
+ul li.teams::before {
+  background-image: url('../../assets/images/favicon-teams.png');
+}
