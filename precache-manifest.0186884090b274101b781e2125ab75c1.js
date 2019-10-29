@@ -8,7 +8,7 @@ self.__precacheManifest = [
     "url": "/robots.txt"
   },
   {
-    "revision": "ed9d90df7428106fb3de",
+    "revision": "c7a59e3a3163b3b9cca4",
     "url": "/css/app.e3aded5f.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/js/chunk-vendors.8801262e.js"
   },
   {
-    "revision": "708e5a2d9a51c21d1684",
+    "revision": "387895517d2b2df1ce82",
     "url": "/js/Home.887ebcb9.js"
   },
   {
@@ -28,24 +28,24 @@ self.__precacheManifest = [
     "url": "/js/chunk-89642826.d3416662.js"
   },
   {
-    "revision": "67924d4af2d4225d1f7a",
-    "url": "/js/MainMenu.vue.aa25cd22.js"
+    "revision": "5e2b1ff247cbe96407b6",
+    "url": "/js/MainMenu.vue.01defed6.js"
   },
   {
-    "revision": "64673a4877f607f70591",
-    "url": "/js/chunk-242a1d1d.83d4abef.js"
+    "revision": "d3b8c9b92f8e74fe3ca6",
+    "url": "/js/chunk-3ff7492a.884ca8ef.js"
   },
   {
-    "revision": "f3f24f242b83bbff172a",
+    "revision": "944f7969f6467d4cec97",
     "url": "/js/MySection.vue.e81ab096.js"
   },
   {
-    "revision": "ed9d90df7428106fb3de",
-    "url": "/js/app.acca4b7a.js"
+    "revision": "c7a59e3a3163b3b9cca4",
+    "url": "/js/app.ca9cb3ed.js"
   },
   {
-    "revision": "51bb45ddeae9f0dd65f2",
-    "url": "/js/PageLogo.vue.cd5783cd.js"
+    "revision": "47d6ccbc3d1cc943943b",
+    "url": "/js/PageLogo.vue.ffdd4ada.js"
   },
   {
     "revision": "d24e3e390aee705eca9f",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/img/favicon-agped.fe75d020.png"
   },
   {
-    "revision": "51bb45ddeae9f0dd65f2",
+    "revision": "47d6ccbc3d1cc943943b",
     "url": "/css/PageLogo.vue.e57c87ab.css"
   },
   {
@@ -68,32 +68,32 @@ self.__precacheManifest = [
     "url": "/favicon.png"
   },
   {
-    "revision": "585119f55c21674c6bd4031d6bd65f5f",
+    "revision": "f2e3d5e96d4171d3cfd316a4dce7a3eb",
     "url": "/index.html"
-  },
-  {
-    "revision": "930e872dcd937da044cdc789d87eca8a",
-    "url": "/img/favicon-tit.930e872d.png"
-  },
-  {
-    "revision": "64673a4877f607f70591",
-    "url": "/css/chunk-242a1d1d.9a56618f.css"
   },
   {
     "revision": "d6b404e1fb8db2e727904de11fcb0fc4",
     "url": "/img/favicon-teams.d6b404e1.png"
   },
   {
-    "revision": "f3f24f242b83bbff172a",
-    "url": "/css/MySection.vue.07b0c350.css"
+    "revision": "d3b8c9b92f8e74fe3ca6",
+    "url": "/css/chunk-3ff7492a.48f1efd8.css"
   },
   {
-    "revision": "67924d4af2d4225d1f7a",
+    "revision": "930e872dcd937da044cdc789d87eca8a",
+    "url": "/img/favicon-tit.930e872d.png"
+  },
+  {
+    "revision": "944f7969f6467d4cec97",
+    "url": "/css/MySection.vue.1088e659.css"
+  },
+  {
+    "revision": "5e2b1ff247cbe96407b6",
     "url": "/css/MainMenu.vue.05178e32.css"
   },
   {
-    "revision": "708e5a2d9a51c21d1684",
-    "url": "/css/Home.9c11c763.css"
+    "revision": "387895517d2b2df1ce82",
+    "url": "/css/Home.cc4e2209.css"
   },
   {
     "revision": "5e66782951858ed11f05",
