@@ -6,7 +6,9 @@
     </header>
 
     <section id="content-wrap">
-      <router-view />
+      <transition name="fade" mode="out-in">
+        <router-view />
+      </transition>
     </section>
 
     <footer id="footer">
