@@ -28,10 +28,10 @@ export const MySection = () =>
     `@/components/MySection.vue`
   )
 
-export const SvgOutline = () =>
+export const SvgIcon = () =>
   import(
-    /* webpackChunkName: "SvgOutline.vue" */
-    `@/components/SvgOutline.vue`
+    /* webpackChunkName: "SvgIcon.vue" */
+    `@/components/SvgIcon.vue`
   )
 
 // const Components = {}

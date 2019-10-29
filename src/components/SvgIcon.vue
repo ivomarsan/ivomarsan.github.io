@@ -1,5 +1,12 @@
 <template>
   <div
+    v-if="flag"
+    class="svg-icon"
+    :class="icon"
+    v-html="require(`!!html-loader!@/assets/images/flags/${icon}.svg`)"
+  ></div>
+  <div
+    v-else
     class="svg-icon"
     :class="icon"
     v-html="require(`!!html-loader!@/assets/icons/outline-${icon}.svg`)"
@@ -8,12 +15,16 @@
 
 <script>
 export default {
-  name: 'SvgOutline',
+  name: 'SvgIcon',
 
   props: {
     icon: {
       type: String,
       default: 'default'
+    },
+    flag: {
+      type: Boolean,
+      default: false
     }
   }
 }

@@ -2,7 +2,7 @@
   <!-- TODO MySection -->
   <section class="my-section" :class="icon">
     <header>
-      <SvgOutline :icon="icon" />
+      <SvgIcon :icon="icon" />
       <h1>{{ title }}</h1>
     </header>
     <div class="slot">
@@ -12,13 +12,13 @@
 </template>
 
 <script>
-import { SvgOutline } from '@/components'
+import { SvgIcon } from '@/components'
 
 export default {
   name: 'MySection',
 
   components: {
-    SvgOutline
+    SvgIcon
   },
 
   props: {
