@@ -1,6 +1,6 @@
 /* TODO MySection */
 .my-section {
-  max-width: 30rem;
+  max-width: 40rem;
   width: 100%;
   border-radius: 3px;
   margin: 1rem;
@@ -71,5 +71,12 @@
         font-size: 1.2rem;
       }
     }
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 500px) {
+  .my-section {
+    max-width: 30rem;
   }
 }
