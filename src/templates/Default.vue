@@ -26,7 +26,7 @@
       <section class="contact-info">
         <a class="card" href="https://telegram.me/ivomarsan" target="_blank">
           <SvgIcon icon="chat" />
-          <p>Telegram</p>
+          <p>Chat</p>
         </a>
         <a class="card" href="mailto:ivomarlucio@gmail.com" target="_blank">
           <SvgIcon icon="email" />
