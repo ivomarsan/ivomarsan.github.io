@@ -1,6 +1,4 @@
 #main-app {
-  --footer-height: 20rem;
-
   position: relative;
   min-height: 100vh;
 }
@@ -18,7 +16,7 @@
 }
 
 #header {
-  height: 10rem;
+  height: var(--header-height);
   display: flex;
   align-items: center;
   justify-content: space-between;

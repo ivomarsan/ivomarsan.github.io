@@ -1,0 +1,22 @@
+.about {
+  --about-height: calc(100vh - (var(--header-height) + var(--footer-height)));
+
+  min-height: var(--about-height);
+  width: 100%;
+  text-align: center;
+  background-image: url('../../assets/images/profile.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  filter: grayscale(50%);
+  animation: image-up 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes image-up {
+  from {
+    background-position-y: var(--about-height);
+    opacity: 0;
+    filter: grayscale(100%);
+  }
+}

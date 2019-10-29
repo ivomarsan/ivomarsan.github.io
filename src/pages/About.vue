@@ -59,4 +59,6 @@ export default {
 }
 </script>
 
-<style lang="postcss" scoped></style>
+<style lang="postcss" scoped>
+@import '../styles/pages/about.css';
+</style>

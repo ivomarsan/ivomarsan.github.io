@@ -12,4 +12,6 @@
   --darkerwhite: color-mod(var(--offwhite) shade(20%));
 
   --max-width: 120rem;
+  --header-height: 10rem;
+  --footer-height: 20rem;
 }
