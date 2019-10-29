@@ -13,12 +13,24 @@
 /* ul li::before {
   background-image: url('../../assets/images/logo.png');
 } */
-ul li.agped::before {
-  background-image: url('../../assets/images/favicon-agped.png');
+ul li.agped {
+  background-image: url('../../assets/images/logo-agped.svg');
+
+  &::before {
+    background-image: url('../../assets/images/favicon-agped.png');
+  }
 }
-ul li.teams::before {
-  background-image: url('../../assets/images/favicon-teams.png');
+ul li.teams {
+  background-image: url('../../assets/images/logo-teams.svg');
+
+  &::before {
+    background-image: url('../../assets/images/favicon-teams.png');
+  }
 }
-ul li.tit::before {
-  background-image: url('../../assets/images/favicon-tit.png');
+ul li.tit {
+  background-image: url('../../assets/images/logo-tit.svg');
+
+  &::before {
+    background-image: url('../../assets/images/favicon-tit.png');
+  }
 }
