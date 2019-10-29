@@ -10,15 +10,42 @@
     </section>
 
     <footer id="footer">
-      Footer
-      <button @click="$setLang('en')">🇬🇧</button>
-      <button @click="$setLang('pt-BR')">🇧🇷</button>
+      <section class="i18n">
+        <p>{{ $t('footer.i18n.translate') }}</p>
+        <div class="flags">
+          <a @click="$setLang('en')">
+            <SvgIcon icon="en" flag />
+          </a>
+          <a @click="$setLang('pt-BR')">
+            <SvgIcon icon="pt-br" flag />
+          </a>
+        </div>
+      </section>
+      <section class="contact-info">
+        <a class="card" href="https://telegram.me/ivomarsan" target="_blank">
+          <SvgIcon icon="chat" />
+          <p>Telegram</p>
+        </a>
+        <a class="card" href="mailto:ivomarlucio@gmail.com" target="_blank">
+          <SvgIcon icon="email" />
+          <p>ivomarlucio@gmail.com</p>
+        </a>
+        <div class="card">
+          <SvgIcon icon="where" />
+          <p>Surubim, PE</p>
+        </div>
+      </section>
+      <section class="thanks">
+        <p>{{ $t('footer.thanks.work') }}</p>
+        <SvgIcon icon="24-7" />
+        <p>{{ $t('footer.thanks.4you') }}</p>
+      </section>
     </footer>
   </div>
 </template>
 
 <script>
-import { PageLogo, MainMenu } from '@/components'
+import { PageLogo, MainMenu, SvgIcon } from '@/components'
 
 import { i18n } from '@/mixins'
 
@@ -27,7 +54,8 @@ export default {
 
   components: {
     PageLogo,
-    MainMenu
+    MainMenu,
+    SvgIcon
   }
 
   // Dynamically add the Vuex module
