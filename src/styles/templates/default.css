@@ -172,7 +172,7 @@
 
 /* Media Queries */
 @media screen and (max-width: 1200px) {
-  #main-app {
+  :root {
     --footer-height: 40rem;
   }
 
@@ -190,7 +190,7 @@
 }
 
 @media screen and (max-width: 500px) {
-  #main-app {
+  :root {
     --footer-height: 56rem;
   }
 
