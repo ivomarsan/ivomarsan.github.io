@@ -12,5 +12,14 @@
     "softwares": "Patentes",
     "where": "Onde",
     "chat": "Bate-papo"
+  },
+  "footer": {
+    "i18n": {
+      "translate": "Traduzir para"
+    },
+    "thanks": {
+      "work": "Trabalhando",
+      "4you": "por Você!"
+    }
   }
 }

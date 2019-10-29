@@ -12,5 +12,14 @@
     "softwares": "Patents",
     "where": "Where",
     "chat": "Chat"
+  },
+  "footer": {
+    "i18n": {
+      "translate": "Translate to"
+    },
+    "thanks": {
+      "work": "Working",
+      "4you": "for You!"
+    }
   }
 }
