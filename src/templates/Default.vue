@@ -13,10 +13,10 @@
       <section class="i18n">
         <p>{{ $t('footer.i18n.translate') }}</p>
         <div class="flags">
-          <a @click="$setLang('en')">
+          <a @click="$setLang('en')" :class="flagClass('en')">
             <SvgIcon icon="en" flag />
           </a>
-          <a @click="$setLang('pt-BR')">
+          <a @click="$setLang('pt-BR')" :class="flagClass('pt-BR')">
             <SvgIcon icon="pt-br" flag />
           </a>
         </div>
@@ -56,6 +56,12 @@ export default {
     PageLogo,
     MainMenu,
     SvgIcon
+  },
+
+  methods: {
+    flagClass(lang) {
+      return this.$i18n.locale === lang ? 'active' : ''
+    }
   }
 
   // Dynamically add the Vuex module

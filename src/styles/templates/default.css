@@ -133,14 +133,31 @@
   cursor: pointer;
   transition: all 100ms linear;
 
-  &:hover {
+  &:hover:not(.active) {
     transform: scale(1.1);
+  }
+
+  &.active {
+    animation: select-lang 300ms ease-in-out;
+    opacity: 0.3;
   }
 }
 
 #footer .i18n div.flags a .svg-icon {
   width: 4rem;
   height: 4rem;
+}
+
+/* Animations */
+@keyframes select-lang {
+  from {
+    transform: scale(3);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* Media Queries */
