@@ -30,7 +30,7 @@ export default {
 
   watch: {
     $route() {
-      this.toggle()
+      this.close()
     }
   },
 
@@ -43,7 +43,7 @@ export default {
   methods: {
     ...mapActions('menu', {
       toggle: 'toggle',
-      reset: 'reset'
+      close: 'close'
     }),
 
     esc() {

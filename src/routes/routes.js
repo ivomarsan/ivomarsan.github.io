@@ -23,7 +23,7 @@ export default [
     redirect: {
       name: 'Home'
     },
-    children: [route('', { name: 'Home' }), route('about'), route('/about/:id')]
+    children: [route('home'), route('about'), route('/about/:id')]
   }),
 
   route('/test/:id', { redirect: '/about/:id' })

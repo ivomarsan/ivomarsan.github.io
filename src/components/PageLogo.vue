@@ -1,5 +1,5 @@
 <template>
-  <section id="page-logo">
+  <section id="page-logo" @click="goToHome()">
     <div class="background-logo"></div>
 
     <svg
@@ -21,7 +21,14 @@
 
 <script>
 export default {
-  name: 'PageLogo'
+  name: 'PageLogo',
+
+  methods: {
+    goToHome() {
+      this.$router.currentRoute.name !== 'Home' &&
+        this.$router.replace({ name: 'Home' })
+    }
+  }
 }
 </script>
 
