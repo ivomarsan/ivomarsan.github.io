@@ -2,7 +2,6 @@
   <div class="home">
     <!-- TODO -->
 
-    <MySection icon="default" :title="$t('section.default')"></MySection>
     <MySection icon="education" :title="$t('section.education')"></MySection>
     <MySection icon="logos" :title="$t('section.logos')"></MySection>
     <MySection icon="projects" :title="$t('section.projects')"></MySection>
@@ -15,7 +14,6 @@
         <li class="tit">Teach in Touch <em>BR 51 2019 000910-0</em></li>
       </ul>
     </MySection>
-    <MySection icon="where" :title="$t('section.where')"></MySection>
   </div>
 </template>
 
