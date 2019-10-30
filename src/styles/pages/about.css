@@ -20,7 +20,7 @@ section.about > h1.title {
   background-color: var(--purple);
   color: var(--white);
   padding: 1rem 6rem;
-  margin: 1rem auto;
+  margin: 2rem var(--about-divider);
 }
 
 section.about .wrapper {
@@ -74,11 +74,6 @@ section.about .wrapper .sections .my-section {
         left bottom / contain no-repeat;
   }
 
-  section.about > h1.title {
-    margin: 0 auto;
-    width: 50%;
-  }
-
   section.about .wrapper .sections {
     flex-direction: column;
     align-items: center;
@@ -93,10 +88,6 @@ section.about .wrapper .sections .my-section {
         left bottom / contain no-repeat;
   }
 
-  section.about > h1.title {
-    margin: 0 auto;
-  }
-
   section.about .wrapper .sections {
     flex-direction: column;
     align-items: center;
@@ -106,7 +97,7 @@ section.about .wrapper .sections .my-section {
   section.about {
     --about-divider: 40%;
 
-    background: url(/img/profile.95afbaa4.png) -13rem 0 / contain no-repeat,
+    background: url('../../assets/images/profile.png') -13rem 0 / contain no-repeat,
       linear-gradient(90deg, var(--purple) var(--about-divider), var(--white) 0)
         0 100% / contain no-repeat;
   }
@@ -129,7 +120,7 @@ section.about .wrapper .sections .my-section {
   }
 
   section.about > h1.title {
-    width: 100%;
+    margin: 2rem auto;
     color: var(--purple);
     background-color: transparent;
   }
