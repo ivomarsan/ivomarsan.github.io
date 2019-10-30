@@ -1,0 +1,32 @@
+{
+  "candy": "no candies | one candy | {count} candies",
+  "menu": {
+    "home": "Início",
+    "about": "Acerca"
+  },
+  "section": {
+    "default": "Sección",
+    "education": "Educación",
+    "logos": "Marcas",
+    "projects": "Proyectos",
+    "softwares": "Patentes",
+    "where": "Dónde",
+    "chat": "Charla",
+    "i18n": "Idiomas"
+  },
+  "footer": {
+    "i18n": {
+      "translate": "Traducir a"
+    },
+    "thanks": {
+      "work": "Trabajando",
+      "4you": "¡para Ti!"
+    }
+  },
+  "about": {
+    "title": "Sobre mi",
+    "i18n": "Portugués, Español y Inglés",
+    "education": "IFCE - Instituto Federal de Ceará, Aracati, Brasil",
+    "description": "Bachillerato en Ciencias de la Computación por el Instituto Federal de Ceará, Aracati. Entusiasta de la web y programador desde 12 años. Delphi hasta Javascript, un viaje rodeado de encantamientos de tecnología y una pasión por el Front End. Actualmente enamorado de Vue, PostCSS y HTML5."
+  }
+}

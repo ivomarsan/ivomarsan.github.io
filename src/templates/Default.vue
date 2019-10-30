@@ -21,6 +21,9 @@
           <a @click="$setLang('pt-BR')" :class="flagClass('pt-BR')">
             <SvgIcon icon="pt-br" flag />
           </a>
+          <a @click="$setLang('es')" :class="flagClass('es')">
+            <SvgIcon icon="es" flag />
+          </a>
         </div>
       </section>
       <section class="contact-info">
