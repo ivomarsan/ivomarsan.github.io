@@ -44,6 +44,7 @@
   border: 2px solid var(--purple);
   padding: 1rem;
   font-size: var(--font-size-p);
+  user-select: text;
 
   & ul {
     list-style: none;
