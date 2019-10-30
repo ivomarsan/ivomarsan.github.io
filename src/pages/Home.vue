@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <section class="home">
     <!-- TODO -->
 
     <MySection icon="education" :title="$t('section.education')"></MySection>
@@ -14,7 +14,7 @@
         <li class="tit">Teach in Touch <em>BR 51 2019 000910-0</em></li>
       </ul>
     </MySection>
-  </div>
+  </section>
 </template>
 
 <script>

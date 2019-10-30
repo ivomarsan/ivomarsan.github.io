@@ -1,6 +1,6 @@
 /* TODO home page style */
 
-.home {
+section.home {
   display: flex;
   flex-wrap: wrap;
   max-width: var(--max-width);
