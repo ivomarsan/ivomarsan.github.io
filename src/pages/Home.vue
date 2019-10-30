@@ -2,7 +2,6 @@
   <section class="home">
     <!-- TODO -->
 
-    <MySection icon="education" :title="$t('section.education')"></MySection>
     <MySection icon="logos" :title="$t('section.logos')"></MySection>
     <MySection icon="projects" :title="$t('section.projects')"></MySection>
     <MySection icon="softwares" :title="$t('section.softwares')">
