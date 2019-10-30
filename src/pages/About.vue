@@ -1,6 +1,23 @@
 <template>
-  <div class="about">
-    <p>{{ $d(new Date(), 'short') }}</p>
+  <section class="about">
+    <h1>{{ $t('about.title') }}</h1>
+
+    <div class="wrapper">
+      <p>
+        {{ $t('about.description') }}
+      </p>
+
+      <div class="sections">
+        <MySection icon="education" :title="$t('section.education')">
+          {{ $t('about.education') }}
+        </MySection>
+        <MySection icon="i18n" :title="$t('section.i18n')">
+          {{ $t('about.i18n') }}
+        </MySection>
+      </div>
+    </div>
+
+    <!-- <p>{{ $d(new Date(), 'short') }}</p>
     <p>{{ $d(new Date(), 'long') }}</p>
     <p>{{ $tc('candy', model.count, { count: model.count }) }}</p>
     <h1>This is an about page</h1>
@@ -22,15 +39,23 @@
     <button @click="setModel(model)">Persist Model</button>
     <p>{{ $n(model.count, 'currency') }}</p>
     <p>{{ $n(model.count / 100, 'percent') }}</p>
-    <pre>model: {{ model }}</pre>
-  </div>
+    <pre>model: {{ model }}</pre> -->
+  </section>
 </template>
 
 <script>
 // This is a helper
 import { mapGetters, mapActions } from 'vuex'
 
+import { MySection } from '@/components'
+
 export default {
+  name: 'About',
+
+  components: {
+    MySection
+  },
+
   computed: {
     // I mapped model/getModel getter to this.model
     ...mapGetters('model', {

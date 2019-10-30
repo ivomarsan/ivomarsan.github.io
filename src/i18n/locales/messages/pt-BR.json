@@ -11,7 +11,8 @@
     "projects": "Projetos",
     "softwares": "Patentes",
     "where": "Onde",
-    "chat": "Bate-papo"
+    "chat": "Bate-papo",
+    "i18n": "Idiomas"
   },
   "footer": {
     "i18n": {
@@ -21,5 +22,11 @@
       "work": "Trabalhando",
       "4you": "por Você!"
     }
+  },
+  "about": {
+    "title": "Sobre mim",
+    "i18n": "Português, Espanhol e Inglês",
+    "education": "IFCE - Instituto Federal do Ceará, Aracati, Brasil",
+    "description": "Bacharel em Ciência da Computação pelo Instituto Federal do Ceará, Aracati. Entusiasta Web, programador desde os 12 anos. Delphi ao Javascript, uma jornada arrodeada por encantos da tecnologia e uma paixão pelo Front-End. Atualmente, apaixonado pelo Vue, PostCSS e HTML5."
   }
 }
