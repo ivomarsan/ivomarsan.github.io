@@ -12,6 +12,10 @@
   transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1);
   opacity: 0;
   animation: fade-in 300ms ease-in-out forwards 4.5s;
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
 
   &:hover {
     box-shadow: 0 0 0 8px var(--menu-bg), 0 0 0 8px var(--menu-bg);

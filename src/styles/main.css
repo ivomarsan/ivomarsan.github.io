@@ -5,6 +5,10 @@
 a {
   color: var(--links);
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
 
   &:hover {
     text-decoration: underline;
