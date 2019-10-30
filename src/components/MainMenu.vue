@@ -11,9 +11,9 @@
       <li>
         <router-link to="/about">{{ $t('menu.about') }}</router-link>
       </li>
-      <li>
+      <!-- <li>
         <router-link to="/test/5">Redirect</router-link>
-      </li>
+      </li> -->
     </ul>
   </nav>
 </template>
