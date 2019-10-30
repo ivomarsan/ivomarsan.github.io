@@ -30,6 +30,9 @@ export default {
 
   watch: {
     $route() {
+      // Scroll Window to Top with Smooth animation
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+
       this.close()
     }
   },

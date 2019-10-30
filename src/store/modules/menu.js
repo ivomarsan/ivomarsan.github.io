@@ -20,6 +20,9 @@ const actions = {
 
 const mutations = {
   TOGGLE(state) {
+    // Scroll Window to Top with Smooth animation
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+
     if (state.class === 'on') {
       this.commit('menu/CLOSE')
     } else {
