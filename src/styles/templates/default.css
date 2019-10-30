@@ -1,6 +1,7 @@
 #main-app {
   position: relative;
   min-height: 100vh;
+  font-size: var(--font-size-p);
 }
 
 .fade-enter-active,
@@ -109,7 +110,7 @@
 
 #footer .i18n,
 #footer .thanks {
-  font-size: 1.6rem;
+  font-size: var(--font-size-p);
   font-family: 'Comfortaa', cursive;
   height: 100%;
   width: 16rem;
