@@ -37,7 +37,6 @@
 }
 
 .my-section div.slot {
-  background-color: var(--white);
   color: var(--gray);
   border-radius: 0 0 3px 3px;
   box-shadow: 0 0 0.5rem var(--purple), 0 1rem 0.5rem -1rem var(--purple) inset;
