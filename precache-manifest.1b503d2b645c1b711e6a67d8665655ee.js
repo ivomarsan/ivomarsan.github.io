@@ -52,8 +52,8 @@ self.__precacheManifest = [
     "url": "/js/PageLogo.vue.ffdd4ada.js"
   },
   {
-    "revision": "c4e03d8f170dc889f9cceb5147c45c3c",
-    "url": "/img/logo-agped.c4e03d8f.svg"
+    "revision": "fe75d020c226e334fc5f6f2eeb290f90",
+    "url": "/img/favicon-agped.fe75d020.png"
   },
   {
     "revision": "fdefa2daa08fc3653249",
@@ -72,12 +72,12 @@ self.__precacheManifest = [
     "url": "/index.html"
   },
   {
-    "revision": "fe75d020c226e334fc5f6f2eeb290f90",
-    "url": "/img/favicon-agped.fe75d020.png"
+    "revision": "ad018653349599215778b8ccdc5cf444",
+    "url": "/img/logo-tit.ad018653.svg"
   },
   {
-    "revision": "d6b404e1fb8db2e727904de11fcb0fc4",
-    "url": "/img/favicon-teams.d6b404e1.png"
+    "revision": "18c654e21859d710618e683fffedd9a1",
+    "url": "/img/logo-teams.18c654e2.svg"
   },
   {
     "revision": "fd420a079148c07120d95cf6a667d1ed",
@@ -88,16 +88,16 @@ self.__precacheManifest = [
     "url": "/css/app.e431c913.css"
   },
   {
-    "revision": "18c654e21859d710618e683fffedd9a1",
-    "url": "/img/logo-teams.18c654e2.svg"
-  },
-  {
-    "revision": "ad018653349599215778b8ccdc5cf444",
-    "url": "/img/logo-tit.ad018653.svg"
+    "revision": "d6b404e1fb8db2e727904de11fcb0fc4",
+    "url": "/img/favicon-teams.d6b404e1.png"
   },
   {
     "revision": "930e872dcd937da044cdc789d87eca8a",
     "url": "/img/favicon-tit.930e872d.png"
+  },
+  {
+    "revision": "c4e03d8f170dc889f9cceb5147c45c3c",
+    "url": "/img/logo-agped.c4e03d8f.svg"
   },
   {
     "revision": "cbd2987899b99684f5a1",
