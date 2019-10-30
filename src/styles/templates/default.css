@@ -2,6 +2,7 @@
   position: relative;
   min-height: 100vh;
   font-size: var(--font-size-p);
+  user-select: none;
 }
 
 .fade-enter-active,
@@ -23,7 +24,6 @@
   justify-content: space-between;
   padding: 1rem 5rem;
   border-bottom: 3px solid var(--purple);
-  user-select: none;
 }
 
 #content-wrap {
