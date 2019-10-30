@@ -7,12 +7,13 @@ section.about {
   text-align: center;
   background: url('../../assets/images/profile.png') left bottom / contain
       no-repeat,
-    linear-gradient(90deg, var(--purple) var(--about-divider), var(--white) 0);
+    linear-gradient(90deg, var(--purple) var(--about-divider), var(--white) 0)
+      left bottom / contain no-repeat;
   animation: image-up 1s ease-in-out;
   user-select: text;
 }
 
-section.about > h1 {
+section.about > h1.title {
   width: max-content;
   font-size: var(--font-size-h1);
   text-transform: uppercase;
@@ -24,7 +25,7 @@ section.about > h1 {
 
 section.about .wrapper {
   font-size: var(--font-size-p);
-  margin-left: var(--about-divider);
+  margin: 2rem 0 2rem var(--about-divider);
 }
 
 section.about .wrapper p {
@@ -46,6 +47,7 @@ section.about .wrapper .sections .my-section {
     --white: #6751eb;
     box-shadow: none;
     border: none;
+    background-color: transparent;
   }
 }
 
@@ -55,5 +57,86 @@ section.about .wrapper .sections .my-section {
     background-position-y: var(--about-height);
     opacity: 0;
     filter: grayscale(100%);
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 1365px) {
+  section.about {
+    --about-divider: 30%;
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  section.about {
+    background: url('../../assets/images/profile.png') -5rem 0 / contain no-repeat,
+      linear-gradient(90deg, var(--purple) var(--about-divider), var(--white) 0)
+        left bottom / contain no-repeat;
+  }
+
+  section.about > h1.title {
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  section.about .wrapper .sections {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (orientation: portrait) {
+  section.about {
+    --about-divider: 40%;
+
+    background: url('../../assets/images/profile.png') -15rem 0 / contain no-repeat,
+      linear-gradient(90deg, var(--purple) var(--about-divider), var(--white) 0)
+        left bottom / contain no-repeat;
+  }
+
+  section.about > h1.title {
+    margin: 0 auto;
+  }
+
+  section.about .wrapper .sections {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  section.about {
+    --about-divider: 40%;
+
+    background: url(/img/profile.95afbaa4.png) -13rem 0 / contain no-repeat,
+      linear-gradient(90deg, var(--purple) var(--about-divider), var(--white) 0)
+        0 100% / contain no-repeat;
+  }
+
+  section.about .wrapper .sections .my-section {
+    max-width: 35rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  section.about {
+    --about-divider: 0;
+
+    background: linear-gradient(
+        90deg,
+        var(--purple) var(--about-divider),
+        var(--white) 0
+      )
+      0 100% / contain no-repeat;
+  }
+
+  section.about > h1.title {
+    width: 100%;
+    color: var(--purple);
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section.about .wrapper .sections .my-section {
+    max-width: 30rem;
   }
 }

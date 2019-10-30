@@ -1,6 +1,6 @@
 <template>
   <section class="about">
-    <h1>{{ $t('about.title') }}</h1>
+    <h1 class="title">{{ $t('about.title') }}</h1>
 
     <div class="wrapper">
       <p>
