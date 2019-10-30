@@ -5,7 +5,7 @@ section.about {
   min-height: var(--about-height);
   width: 100%;
   text-align: center;
-  background: url('../../assets/images/profile.png') left bottom / contain
+  background: url('../../assets/images/profile.webp') left bottom / contain
       no-repeat,
     linear-gradient(90deg, var(--purple) var(--about-divider), var(--white) 0)
       left bottom / contain no-repeat;
@@ -69,7 +69,7 @@ section.about .wrapper .sections .my-section {
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
   section.about {
-    background: url('../../assets/images/profile.png') -5rem 0 / contain no-repeat,
+    background: url('../../assets/images/profile.webp') -5rem 0 / contain no-repeat,
       linear-gradient(90deg, var(--purple) var(--about-divider), var(--white) 0)
         left bottom / contain no-repeat;
   }
@@ -83,7 +83,7 @@ section.about .wrapper .sections .my-section {
   section.about {
     --about-divider: 40%;
 
-    background: url('../../assets/images/profile.png') -15rem 0 / contain no-repeat,
+    background: url('../../assets/images/profile.webp') -15rem 0 / contain no-repeat,
       linear-gradient(90deg, var(--purple) var(--about-divider), var(--white) 0)
         left bottom / contain no-repeat;
   }
@@ -97,7 +97,7 @@ section.about .wrapper .sections .my-section {
   section.about {
     --about-divider: 40%;
 
-    background: url('../../assets/images/profile.png') -13rem 0 / contain no-repeat,
+    background: url('../../assets/images/profile.webp') -13rem 0 / contain no-repeat,
       linear-gradient(90deg, var(--purple) var(--about-divider), var(--white) 0)
         0 100% / contain no-repeat;
   }
