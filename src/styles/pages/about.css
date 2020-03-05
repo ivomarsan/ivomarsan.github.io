@@ -11,7 +11,6 @@ section.about {
       left bottom / contain no-repeat;
   animation: image-up 1s ease-in-out;
   user-select: text;
-  padding: 0 20%;
 }
 
 section.about > h1.title {
@@ -27,6 +26,7 @@ section.about > h1.title {
 section.about .wrapper {
   font-size: var(--font-size-p);
   margin: 2rem 0 2rem var(--about-divider);
+  padding: 0 20%;
 }
 
 section.about .wrapper p {
@@ -66,6 +66,9 @@ section.about .wrapper .sections .my-section {
 @media screen and (max-width: 1365px) {
   section.about {
     --about-divider: 30%;
+  }
+
+  section.about .wrapper {
     padding: 0 10%;
   }
 }
@@ -75,6 +78,9 @@ section.about .wrapper .sections .my-section {
     background: url('../../assets/images/profile.webp') -5rem 0 / contain no-repeat,
       linear-gradient(90deg, var(--purple) var(--about-divider), var(--white) 0)
         left bottom / contain no-repeat;
+  }
+
+  section.about .wrapper {
     padding: 0;
   }
 
