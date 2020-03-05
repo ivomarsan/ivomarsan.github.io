@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "ae79740eef7f8b93ef6d",
-    "url": "/js/app.34472d85.js"
+    "revision": "e973a9953b21820394b3",
+    "url": "/js/app.d1002f2a.js"
   },
   {
     "revision": "735ab4f94fbcd57074377afca324c813",
@@ -52,15 +52,15 @@ self.__precacheManifest = [
     "url": "/js/PageLogo.vue.ffdd4ada.js"
   },
   {
-    "revision": "fe75d020c226e334fc5f6f2eeb290f90",
-    "url": "/img/favicon-agped.fe75d020.png"
+    "revision": "c4e03d8f170dc889f9cceb5147c45c3c",
+    "url": "/img/logo-agped.c4e03d8f.svg"
   },
   {
     "revision": "fdefa2daa08fc3653249",
     "url": "/css/PageLogo.vue.8f64678e.css"
   },
   {
-    "revision": "3e6d2b2290cab5e7e0c3",
+    "revision": "13edfe5db798c70cdd0e",
     "url": "/js/About.69ff0911.js"
   },
   {
@@ -68,24 +68,8 @@ self.__precacheManifest = [
     "url": "/favicon.png"
   },
   {
-    "revision": "6da73b18cd04aab7e9feac53f1a73637",
+    "revision": "873c173af5b8321a719e46cf97544880",
     "url": "/index.html"
-  },
-  {
-    "revision": "ad018653349599215778b8ccdc5cf444",
-    "url": "/img/logo-tit.ad018653.svg"
-  },
-  {
-    "revision": "18c654e21859d710618e683fffedd9a1",
-    "url": "/img/logo-teams.18c654e2.svg"
-  },
-  {
-    "revision": "fd420a079148c07120d95cf6a667d1ed",
-    "url": "/img/profile.fd420a07.webp"
-  },
-  {
-    "revision": "ae79740eef7f8b93ef6d",
-    "url": "/css/app.e431c913.css"
   },
   {
     "revision": "d6b404e1fb8db2e727904de11fcb0fc4",
@@ -96,8 +80,24 @@ self.__precacheManifest = [
     "url": "/img/favicon-tit.930e872d.png"
   },
   {
-    "revision": "c4e03d8f170dc889f9cceb5147c45c3c",
-    "url": "/img/logo-agped.c4e03d8f.svg"
+    "revision": "fd420a079148c07120d95cf6a667d1ed",
+    "url": "/img/profile.fd420a07.webp"
+  },
+  {
+    "revision": "e973a9953b21820394b3",
+    "url": "/css/app.e431c913.css"
+  },
+  {
+    "revision": "18c654e21859d710618e683fffedd9a1",
+    "url": "/img/logo-teams.18c654e2.svg"
+  },
+  {
+    "revision": "ad018653349599215778b8ccdc5cf444",
+    "url": "/img/logo-tit.ad018653.svg"
+  },
+  {
+    "revision": "fe75d020c226e334fc5f6f2eeb290f90",
+    "url": "/img/favicon-agped.fe75d020.png"
   },
   {
     "revision": "cbd2987899b99684f5a1",
@@ -116,7 +116,7 @@ self.__precacheManifest = [
     "url": "/css/HelloWorld.vue.c83a5d0c.css"
   },
   {
-    "revision": "3e6d2b2290cab5e7e0c3",
-    "url": "/css/About.f38c6ba3.css"
+    "revision": "13edfe5db798c70cdd0e",
+    "url": "/css/About.28ffca3f.css"
   }
 ];
